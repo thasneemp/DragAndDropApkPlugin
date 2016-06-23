@@ -1,38 +1,39 @@
 <idea-plugin version="2">
-  <id>com.thasneem.draganddrop</id>
-  <name>DragAndDropApk</name>
-  <version>1.0</version>
-  <vendor email="muhammed.thasneem@yahoo.com" url="https://github.com/thasneemp">Muhammed Thasneem</vendor>
+    <id>com.thasneem.draganddrop</id>
+    <name>DragAndDropApk</name>
+    <version>1.1</version>
+    <vendor email="muhammed.thasneem@yahoo.com" url="https://github.com/thasneemp">Muhammed Thasneem</vendor>
 
-  <description><![CDATA[
+    <description><![CDATA[
       This plugin can use for Install apk to mobile without using commands!<br>
       You can drag your APK file to this window or you can select file from your directory.
     ]]></description>
 
-  <change-notes><![CDATA[
-
+    <change-notes><![CDATA[
+* Launch icon changed
     ]]>
-  </change-notes>
+    </change-notes>
 
-  <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
-  <idea-version since-build="141.0"/>
+    <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
+    <idea-version since-build="141.0"/>
 
-  <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
-       on how to target different products -->
-  <!-- uncomment to enable plugin in all products
-  <depends>com.intellij.modules.lang</depends>
-  -->
+    <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+         on how to target different products -->
+    <!-- uncomment to enable plugin in all products
+    <depends>com.intellij.modules.lang</depends>
+    -->
 
-  <extensions defaultExtensionNs="com.intellij">
-    <!-- Add your extensions here -->
-  </extensions>
+    <extensions defaultExtensionNs="com.intellij">
+        <!-- Add your extensions here -->
+    </extensions>
 
-  <actions>
-    <!-- Add your actions here -->
-      <action class="com.thasneem.draganddrop.actions.DragAction" id="com.thasneem.draganddrop.actions.DragAction"
-              description="Drag to install APK" icon="/icons/drag.png" text="Drag to install APK">
-        <add-to-group group-id="ToolsMenu" anchor="last"/>
-        <add-to-group group-id="MainToolBar" anchor="last"/></action>
+    <actions>
+        <!-- Add your actions here -->
+        <action class="com.thasneem.draganddrop.actions.DragAction" id="com.thasneem.draganddrop.actions.DragAction"
+                description="Drag to install APK" icon="/icons/drag.png" text="Drag to install APK">
+            <add-to-group group-id="ToolsMenu" anchor="last"/>
+            <add-to-group group-id="MainToolBar" anchor="last"/>
+        </action>
 
-  </actions>
+    </actions>
 </idea-plugin>
